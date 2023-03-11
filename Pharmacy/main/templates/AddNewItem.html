@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <h1>
+            {{name}}
+        </h1>
+    </head>
+    <body>
+        <form action="" method="post" align = "center">{% csrf_token %}
+            <button name="back">Back</button><br></br>
+        </form>
+        <form action="" method="post" align = "center">{% csrf_token %}
+            Item Code:
+            <input type="text" name="itemCode" required></input><br></br>
+            
+            Supplier Name:
+            <input type="text" name="supplierName" required></input><br></br>
+        
+            Item Description:
+            <input type="text" name="itemDescription"></input><br></br>
+        
+            Unit:
+            <input type="text" name="unit" required></input><br></br>
+        
+            # Of Unit/Pack:
+            <input type="text" name="ofUnitPack" required></input><br></br>
+        
+            Sale Price:
+            <input type="text" name="salePrice" required></input><br></br>
+        
+            Tax:
+            <input type="text" name="tax" required></input><br></br>
+        
+            Discount:
+            <input type="text" name="discount" required></input><br></br>
+        
+            Type:
+            <input type="text" name="type" required></input><br></br>
+        
+            Minimum:
+            <input type="text" name="minimum" required></input><br></br>
+            <button>Enter</button>
+        </form>
+    </body>
+</html>

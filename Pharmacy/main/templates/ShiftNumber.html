@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <h1>
+            {{name}}
+        </h1>
+    </head>
+    <body>
+        <form action="" method="post" align = "center">
+            {% csrf_token %}
+            <span>
+                Shift Number:
+                <input type="number" name="shiftNumber" required></input>
+            </span>
+            <span><button>Enter</button></span>
+        </form>
+    </body>
+</html>
